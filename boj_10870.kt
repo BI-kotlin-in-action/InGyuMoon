@@ -1,9 +1,6 @@
-import java.util.Scanner
-
 //boj 10870
 fun main() {
-    val scanner = Scanner(System.`in`)
-    val num = scanner.nextInt()
+    val num = readln().toInt()
     val arr: MutableList<Int> = mutableListOf()
     var temp: Int
     arr.add(0)
