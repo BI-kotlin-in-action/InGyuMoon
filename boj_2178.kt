@@ -35,9 +35,6 @@ fun main() {
         }
     }
     println(sol() + 1)
-
-    //close 추가
-    //scanner.close()
 }
 
 fun sol(): Int {
