@@ -14,19 +14,15 @@ val dy = arrayOf(0, 1, 0, -1)
 
 //boj 2178
 fun main() {
-    //val scanner = Scanner(System.`in`)
-    // n = scanner.nextInt()
-    // m = scanner.nextInt()
     val input = readln().split(" ").map { it.toInt() }
     n = input[0]
     m = input[1]
 
-    //var str = ArrayList<String>()
     val str: MutableList<String> = mutableListOf()
     for (i in 0 until n) {
-        // val temp = scanner.next()
-        val temp = readln()
-        str.add(temp)
+        //val temp = readln()
+        //str.add(temp)
+        str.add(readln())
     }
 
     for (i in 0 until n) {

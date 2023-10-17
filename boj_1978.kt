@@ -1,21 +1,11 @@
-import java.lang.Math.sqrt
-import java.util.Scanner
+import kotlin.math.sqrt
 
 //boj 1978
 fun main() {
-    val reader = Scanner(System.`in`)
-    val num = readln().toInt()
-    var cnt = 0
+    readln().toInt()
+    val cnt = readln().split(" ").map { it.toInt() }.count(::isPrime)
 
-    val inputs = readln().split(" ").map { it.toInt() }
-    for (input in inputs) {
-        if (isPrime(input)) {
-            cnt++
-        }
-    }
     println(cnt)
-
-    reader.close()
 }
 
 fun isPrime(temp: Int): Boolean {
