@@ -4,7 +4,6 @@ fun main() {
     val m = input[0]
     val n = input[1]
 
-    //vec과 같은 고정(?) 2차원 배열은 mutableList 대신 Array를 사용해도되나요?
     val vec = Array(n) { IntArray(3) }
 
     for (i in 0 until n) {
@@ -19,6 +18,7 @@ fun main() {
     for (i in 0 until n) {
         var idx = 1
         for (j in 0 until 3) {
+            // Triple 사용시 j의 인덱스에 접근이 힘들것 같습니다.
             val num = vec[i][j]
             for (k in 0 until num) {
                 answer[idx++] += j

@@ -2,26 +2,13 @@
 fun main() {
     val n = readln().toInt()
 
-    val a: MutableList<Int> = mutableListOf()
-    val b: MutableList<Int> = mutableListOf()
+    val inputA = readln().split(" ").map { it.toInt() }.toMutableList()
+    val inputB = readln().split(" ").map { it.toInt() }.toMutableList()
 
-    val inputA = readln().split(" ").map { it.toInt() }
-    for (i in 0 until n) {
-        a.add(inputA[i])
-    }
+    inputA.sort()
+    inputB.sortDescending()
 
-    val inputB = readln().split(" ").map { it.toInt() }
-    for (i in 0 until n) {
-        b.add(inputB[i])
-    }
-
-    a.sort()
-    b.sortDescending()
-
-    var sum = 0
-    for (i in 0 until n) {
-        sum += (a[i] * b[i])
-    }
+    val sum = inputA.zip(inputB).sumOf { (it1, it2) -> it1 * it2 }
 
     println(sum)
 }
