@@ -18,7 +18,6 @@ fun main() {
     for (i in 0 until n) {
         var idx = 1
         for (j in 0 until 3) {
-            // Triple 사용시 j의 인덱스에 접근이 힘들것 같습니다.
             val num = vec[i][j]
             for (k in 0 until num) {
                 answer[idx++] += j

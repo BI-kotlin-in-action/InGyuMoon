@@ -4,8 +4,7 @@ fun main() {
 
 fun solution(vec: Array<IntArray>): Int {
     var answer = 0
-    
-    //vec.sort()를 사용해도 똑같은거 아닌가요??
+
     vec.sortBy { it[0] }
     vec.sortBy { it[1] }
 
