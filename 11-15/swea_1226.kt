@@ -58,5 +58,4 @@ fun sol() {
             }
         }
     }
-    return
 }

@@ -16,9 +16,9 @@ fun main() {
     }
 
     val arr = Array(101) { IntArray(100001) }
-    
-    for (i in 1 until n + 1) {
-        for (j in 1 until k + 1) {
+
+    for (i in 1.. n) {
+        for (j in 1 .. k) {
             if (weight[i - 1] <= j) {
                 arr[i][j] = max(arr[i - 1][j], arr[i - 1][j - weight[i - 1]] + value[i - 1])
             } else {
